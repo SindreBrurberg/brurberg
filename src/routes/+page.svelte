@@ -1,4 +1,5 @@
 <script>
+	import { fly, fade } from 'svelte/transition';
 	import logo from '$lib/images/logo_rectangle.svg';
 </script>
 
@@ -8,9 +9,9 @@
 </svelte:head>
 
 <section>
-	<div class="content flex">
+	<div class="flex" style="width: 100%">
 		<div class="max_item">
-			<img src={logo} alt="Brurberg" />
+			<img class="logo_img" in:fly="{{ y: 20, duration: 1500 }}" src={logo} alt="Brurberg" />
 		</div>
 		<div class="new_line" />
 		<img
@@ -21,7 +22,7 @@
 			width="234px"
 		/>
 		<div class="item center">
-			<table class="elevate">
+			<table class="elevate text-xl">
 				<thead>
 					<tr>
 						<th style="width: 30%;" />
@@ -29,21 +30,21 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
+					<tr in:fade="{{ duration: 1500 }}">
 						<td><h3>Name:</h3></td>
 						<td>Sindre Brurberg</td>
 					</tr>
-					<tr>
+					<tr in:fade="{{ delay: 250, duration: 1500 }}">
 						<td><h3>Born in:</h3></td>
 						<td>1997</td>
 					</tr>
-					<tr>
+					<tr in:fade="{{ delay: 500, duration: 1500 }}">
 						<td><h3>Profession:</h3></td>
 						<td>Developer, backend</td>
 					</tr>
-					<tr>
+					<tr in:fade="{{ delay: 750, duration: 1500 }}">
 						<td><h3>Current:</h3></td>
-						<td>Nerthus and eXOReaction customers</td>
+						<td>Nerthus, eXOReaction</td>
 					</tr>
 				</tbody>
 			</table>
@@ -64,13 +65,7 @@
 	h3 {
 		text-align: left;
 	}
-	.content {
-		position: relative;
-		max-width: 1270px;
-		margin-left: auto;
-		margin-right: auto;
-		padding-top: 1em;
-	}
+
 	.flex {
 		display: flex;
 		flex-flow: row wrap;
@@ -99,15 +94,19 @@
 		width: 100%;
 		border-spacing: 0;
 		text-align: left;
+		font-family: gergia;
 	}
 	thead tr:last-child th {
 		font-size: x-large;
 		padding-top: 1em;
 		padding-bottom: 0.5em;
 	}
-	thead tr:last-child th,
 	tbody tr:not(:last-child) td {
 		border-bottom: thin solid rgba(0, 0, 0, 0.12);
+	}
+
+	.logo_img {
+		margin-bottom: 4em;
 	}
 
 	.profile_img {

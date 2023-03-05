@@ -16,7 +16,7 @@
 			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
 		</svg>
 		<ul>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+			<li  aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/">Home</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
@@ -123,7 +123,14 @@
 		transition: color 0.2s linear;
 	}
 
+	a {
+		transition: transform 1s ease;
+  		transform: scale(1);
+	}
+	
 	a:hover {
 		color: var(--color-theme-1);
+  		transform: scale(1.25);
+		transition: transform .5s ease-in-out;
 	}
 </style>

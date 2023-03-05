@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-2xl font-bold my-1 p-1 ;
+    }
+    h2 {
+        @apply text-xl font-semibold my-1 p-1;
+    }
+    h3 {
+        @apply text-lg font-medium my-1 p-1;
+    }
+    ul {
+        @apply list-disc ml-7 my-1
+    }
+    ol {
+        @apply list-decimal ml-7 my-1
+    }
+  }
