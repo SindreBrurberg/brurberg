@@ -11,7 +11,7 @@
 	</main>
 
 	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+		<p>visit <a href="https://exoreaction.com">eXOReaction.com</a> to find my employer eXOReaction</p>
 	</footer>
 </div>
 
@@ -43,6 +43,7 @@
 
 	footer a {
 		font-weight: bold;
+		color: blue;
 	}
 
 	@media (min-width: 480px) {
