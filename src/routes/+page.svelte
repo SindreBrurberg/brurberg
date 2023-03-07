@@ -44,7 +44,7 @@
 					</tr>
 					<tr in:fade="{{ delay: 750, duration: 1500 }}">
 						<td><h3>Current:</h3></td>
-						<td>Nerthus, eXOReaction</td>
+						<td>eXOReaction, Nerthus</td>
 					</tr>
 				</tbody>
 			</table>

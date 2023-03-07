@@ -1,7 +1,7 @@
 ---
 title: An AI's first guide to creating a website
 date: "2023-03-05"
-description: ChatGPT creates a sample markdown whitepaper to use as demo data for the new website. It does contain most of the highlevel points needed to create a website
+description: ChatGPT creates a sample markdown whitepaper to use as demo data for the new website. It does contain most of the high-level points needed to create a website
 ---
 
 Creating a Website: A Comprehensive Guide

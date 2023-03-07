@@ -12,10 +12,16 @@
     h3 {
         @apply text-lg font-medium my-1 p-1;
     }
+    p {
+        @apply my-1
+    }
+    a {
+        color: var(--color-theme-1);
+    }
     ul {
         @apply list-disc ml-7 my-1
     }
     ol {
         @apply list-decimal ml-7 my-1
     }
-  }
+}

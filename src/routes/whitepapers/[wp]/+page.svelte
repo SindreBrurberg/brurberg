@@ -1,13 +1,13 @@
 <script>
 	/**
-	 * @type {{ title: any; date: any; content: any; }}
+	 * @type {{ title: any; date: any; content: any; description: any; }}
 	 */
 	 export let data;
 </script>
 
 <svelte:head>
-	<title>Whitepapers</title>
-	<meta name="description" content="Whitepapers prodused by Brurberg" />
+	<title>{ data.title }</title>
+	<meta name="description" content={ data.description } />
 </svelte:head>
 
 <div class="text-column">

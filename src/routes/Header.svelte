@@ -130,7 +130,7 @@
 	
 	a:hover {
 		color: var(--color-theme-1);
-  		transform: scale(1.25);
-		transition: transform .5s ease-in-out;
+  		transform: scale(1.1);
+		transition: transform .25s ease-in-out;
 	}
 </style>
