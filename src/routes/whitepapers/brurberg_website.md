@@ -46,4 +46,4 @@ The next steps for this website is to add some more features related to where I 
 
 This project will also be used as a base for some of the other projects I have to do for work. For instance I am working on a new version of Nerthus now and with that I will have to create a new frontend.
 
-So the feature of this website will be education and learning for Yuna Brurberg and also as a base and inspiration for work I do that needs a frontend.
+So the feature of this website will be experimentation and education for Yuna Brurberg and also as a base and inspiration for work I do that needs a frontend.
